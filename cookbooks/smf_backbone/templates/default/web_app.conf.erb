@@ -1,0 +1,24 @@
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /home/adarq/public_html
+        ServerName www.adarq.org
+        ServerAlias adarq.org
+        <Directory />
+                Options FollowSymLinks
+                AllowOverride all
+        </Directory>
+        <Directory /home/adarq/public_html/>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride all
+                Require all granted
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+
+        # Possible values include: debug, info, notice, warn, error, crit,
+        # alert, emerg.
+        LogLevel warn
+
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
