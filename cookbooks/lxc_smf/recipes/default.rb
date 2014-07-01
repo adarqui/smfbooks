@@ -34,7 +34,9 @@ lxc_service _name do
  action :start
 end
 
-directory "#{_rootfs}/data/smfbooks"
+directory "#{_rootfs}/data/smfbooks" do
+ recursive true
+end
 
 execute "rsync -av /data/smfbooks/ #{_rootfs}/data/smfbooks/"
 

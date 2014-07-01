@@ -1,3 +1,19 @@
+SMFBOOKS
+========
+
+This is a very specific set of cookbooks/recipes used to build LXC containers for my forum. Adarq.org runs on Apache2/SMF/MySQL. I plan on 're-doing' the forum, but that's another story. Anwyay, these cookbooks will build an lxc container, add a user adarq, create the specified vhost, and create the adarq_forum and testing databases.
+
+usage:
+     ./boot.sh www.adarq.org 10.0.3.200 mysql_root_password mysql_adarq_password
+
+That's it..
+
+
+
+
+
+chef's README.md:
+
 Overview
 ========
 

@@ -1,7 +1,7 @@
 <VirtualHost *:80>
         ServerAdmin webmaster@localhost
         DocumentRoot /home/adarq/public_html
-        ServerName www.adarq.org
+        ServerName <%= @params[:server_name] %>
         ServerAlias adarq.org
         <Directory />
                 Options FollowSymLinks
